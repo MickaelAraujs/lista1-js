@@ -3,6 +3,10 @@ var segundoValor = parseInt(prompt('Informe o segundo valor:'));
 
 var c;
 
-primeiroValor === segundoValor ? c = primeiroValor + segundoValor : c = primeiroValor * segundoValor;
+function verifica(primeiroValor, segundoValor, c){
+    primeiroValor === segundoValor ? c = primeiroValor + segundoValor : c = primeiroValor * segundoValor;
+    return c;
+}
 
-alert(c);
+
+document.write(verifica(primeiroValor, segundoValor, c));
